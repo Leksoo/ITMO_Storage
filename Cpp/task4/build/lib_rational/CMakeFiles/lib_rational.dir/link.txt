@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc liblib_rational.a  CMakeFiles/lib_rational.dir/lib_rational.cpp.obj
+C:\MinGW\bin\ranlib.exe liblib_rational.a

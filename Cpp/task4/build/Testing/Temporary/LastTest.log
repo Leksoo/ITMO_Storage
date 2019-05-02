@@ -1,0 +1,57 @@
+Start testing: Nov 08 17:55 RTZ 2 (ceia)
+----------------------------------------------------------
+1/3 Testing: my_test_1
+1/3 Test: my_test_1
+Command: "C:/programming/cplusplus/cplusplus_3_sem/task4/build/test/my_test.exe" "1" "1/2" "1/2" "1" "1" "equal"
+Directory: C:/programming/cplusplus/cplusplus_3_sem/task4/build/test
+"my_test_1" start time: Nov 08 17:55 RTZ 2 (ceia)
+Output:
+----------------------------------------------------------
+enter polynomial degree
+enter 2 coefficients in format: +-Ai/Bi
+enter q1 and q2 in format:  A/B
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"my_test_1" end time: Nov 08 17:55 RTZ 2 (ceia)
+"my_test_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: my_test_2
+2/3 Test: my_test_2
+Command: "C:/programming/cplusplus/cplusplus_3_sem/task4/build/test/my_test.exe" "3" "1" "3" "1/6" "1/10" "1/5" "-1/5" "bigger"
+Directory: C:/programming/cplusplus/cplusplus_3_sem/task4/build/test
+"my_test_2" start time: Nov 08 17:55 RTZ 2 (ceia)
+Output:
+----------------------------------------------------------
+enter polynomial degree
+enter 4 coefficients in format: +-Ai/Bi
+enter q1 and q2 in format:  A/B
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"my_test_2" end time: Nov 08 17:55 RTZ 2 (ceia)
+"my_test_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: my_test_3
+3/3 Test: my_test_3
+Command: "C:/programming/cplusplus/cplusplus_3_sem/task4/build/test/my_test.exe" "3" "1" "1" "1" "1" "1/5" "1/2" "smaller"
+Directory: C:/programming/cplusplus/cplusplus_3_sem/task4/build/test
+"my_test_3" start time: Nov 08 17:55 RTZ 2 (ceia)
+Output:
+----------------------------------------------------------
+enter polynomial degree
+enter 4 coefficients in format: +-Ai/Bi
+enter q1 and q2 in format:  A/B
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"my_test_3" end time: Nov 08 17:55 RTZ 2 (ceia)
+"my_test_3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 08 17:55 RTZ 2 (ceia)

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/programming/cplusplus/cplusplus_3_sem/task4/rational/lib_polynomial/../lib_rational/lib_rational.h
+string
+-
+
+C:/programming/cplusplus/cplusplus_3_sem/task4/rational/lib_polynomial/polynomial.cpp
+polynomial.h
+C:/programming/cplusplus/cplusplus_3_sem/task4/rational/lib_polynomial/polynomial.h
+
+C:/programming/cplusplus/cplusplus_3_sem/task4/rational/lib_polynomial/polynomial.h
+vector
+-
+iostream
+-
+string
+-
+lib_rational.h
+C:/programming/cplusplus/cplusplus_3_sem/task4/rational/lib_polynomial/lib_rational.h
+

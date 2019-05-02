@@ -1,0 +1,9 @@
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/lib/liblib_rational.a
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/include/./lib_rational.h
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/share/lib_rational.cmake
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/share/lib_rational-noconfig.cmake
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/lib/liblib_polynomial.a
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/include/./polynomial.h
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/share/lib_polynomial.cmake
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/share/lib_polynomial-noconfig.cmake
+C:/programming/cplusplus/cplusplus_3_sem/task4/_install/bin/rational_poly.exe
