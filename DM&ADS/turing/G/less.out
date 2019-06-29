@@ -1,0 +1,53 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 0 -> s 0 >
+s 1 -> s 1 >
+s < -> take_last < <
+
+take_last $ -> take_last $ <
+take_last _ -> go_check _ >
+take_last 0 -> go_sub_0 $ >
+take_last 1 -> go_sub_1 $ >
+
+go_sub_0 $ -> go_sub_0 $ >
+go_sub_0 < -> go_sub_0 < >
+go_sub_0 0 -> go_sub_0 0 >
+go_sub_0 1 -> go_sub_0 1 >
+go_sub_0 a -> sub_0 a <
+go_sub_0 b -> sub_0 b <
+go_sub_0 _ -> sub_0 _ <
+
+sub_0 0 -> go_back a <
+sub_0 1 -> go_back b <
+sub_0 < -> rj < ^
+
+go_sub_1 $ -> go_sub_1 $ >
+go_sub_1 < -> go_sub_1 < >
+go_sub_1 0 -> go_sub_1 0 >
+go_sub_1 1 -> go_sub_1 1 >
+go_sub_1 a -> sub_1 a <
+go_sub_1 b -> sub_1 b <
+go_sub_1 _ -> sub_1 _ <
+
+sub_1 0 -> sub_1_1 b <
+sub_1 1 -> go_back a <
+sub_1 < -> rj a ^
+
+sub_1_1 0 -> sub_1_1 1 <
+sub_1_1 1 -> go_back 0 <
+sub_1_1 < -> rj a ^
+
+go_back 0 -> go_back 0 <
+go_back 1 -> go_back 1 <
+go_back < -> take_last < <
+
+go_check $ -> go_check $ >
+go_check < -> go_check < >
+go_check 0 -> go_check 0 >
+go_check 1 -> ac $ >
+go_check a -> go_check 0 >
+go_check b -> ac $ >
+go_check _ -> rj _ >

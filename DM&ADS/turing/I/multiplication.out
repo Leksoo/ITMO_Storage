@@ -1,0 +1,89 @@
+start: start
+accept: ac
+reject: rj
+blank: _
+
+start 0 -> start 0 <
+start 1 -> start 1 <
+start _ -> start2 + <
+start2 _ -> start3 0 ^
+start3 0 -> start3 0 >
+start3 1 -> start3 1 >
+start3 + -> start3 + >
+start3 * -> start3 * >
+start3 _ -> go_to_copy = <
+
+
+copy_get = -> replace = <
+copy_get 0 -> copy_move_0 a >
+copy_get 1 -> copy_move_1 b >
+copy_get a -> copy_get a >
+copy_get b -> copy_get b >
+
+go_to_copy = -> go_to_copy = <
+go_to_copy 0 -> go_to_copy 0 <
+go_to_copy 1 -> go_to_copy 1 <
+go_to_copy a -> go_to_copy a <
+go_to_copy b -> go_to_copy b <
+go_to_copy * -> copy_get * >
+
+replace a -> replace 0 <
+replace b -> replace 1 <
+replace * -> sub_mul * <
+
+copy_move_0 0 -> copy_move_0 0 >
+copy_move_0 1 -> copy_move_0 1 >
+copy_move_0 = -> copy_place_0 = >
+copy_place_0 0 -> copy_place_0 0 >
+copy_place_0 1 -> copy_place_0 1 >
+copy_place_0 _ -> go_to_copy 0 <
+
+copy_move_1 0 -> copy_move_1 0 >
+copy_move_1 1 -> copy_move_1 1 >
+copy_move_1 = -> copy_place_1 = >
+copy_place_1 0 -> copy_place_1 0 >
+copy_place_1 1 -> copy_place_1 1 >
+copy_place_1 _ -> go_to_copy 1 <
+
+sub_mul 1 -> go_sub_plus 0 >
+sub_mul 0 -> sub_mul 1 <
+sub_mul + -> end + ^
+
+go_sub_plus 0 -> go_sub_plus 0 >
+go_sub_plus 1 -> go_sub_plus 1 >
+go_sub_plus * -> go_sub_plus * >
+go_sub_plus = -> go_sub_plus = >
+go_sub_plus + -> go_sub_plus + >
+go_sub_plus _ -> sub_plus _ <
+sub_plus 0 -> sub_plus 1 <
+sub_plus 1 -> go_add 0 <
+sub_plus = -> del = >
+
+del 0 -> del _ >
+del 1 -> del _ >
+del _ -> go_to_eq _ <
+go_to_eq _ -> go_to_eq _ <
+go_to_eq = -> go_to_copy = <
+
+
+go_add = -> go_add = <
+go_add 0 -> go_add 0 <
+go_add 1 -> go_add 1 <
+go_add * -> go_add * <
+go_add + -> add + <
+add 0 -> go_sub_plus 1 >
+add 1 -> add 0 <
+add _ -> go_sub_plus 1 >
+
+end + -> end _ >
+end 0 -> end _ >
+end 1 -> end _ >
+end = -> end _ >
+end * -> end _ >
+end _ -> end2 _ <
+end2 _ -> end2 _ <
+end2 1 -> end3 1 ^
+end2 0 -> end3 0 ^
+end3 0 -> end3 0 <
+end3 1 -> end3 1 <
+end3 _ -> ac _ >

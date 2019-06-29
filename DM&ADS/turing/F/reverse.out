@@ -1,0 +1,30 @@
+start: q1
+accept: ac
+reject: rj
+blank: _
+q1 0 -> q1 0 >
+q1 1 -> q1 1 >
+q1 _ -> q2 _ <
+q2 0 -> q3 a >
+q2 1 -> q4 b >
+q2 a -> q2 a <
+q2 b -> q2 b <
+q2 _ -> q6 _ >
+q3 0 -> q3 0 >
+q3 1 -> q3 1 >
+q3 a -> q3 a >
+q3 b -> q3 b >
+q3 _ -> q5 0 <
+q4 0 -> q4 0 >
+q4 1 -> q4 1 >
+q4 a -> q4 a >
+q4 b -> q4 b >
+q4 _ -> q5 1 <
+q5 0 -> q5 0 <
+q5 1 -> q5 1 <
+q5 a -> q2 a ^
+q5 b -> q2 b ^
+q6 0 -> ac 0 ^
+q6 1 -> ac 1 ^
+q6 a -> q6 _ >
+q6 b -> q6 _ >

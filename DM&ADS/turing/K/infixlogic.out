@@ -1,0 +1,73 @@
+3
+
+S 1 _ _ -> S _ > 1 > _ ^
+S 0 _ _ -> S _ > 0 > _ ^
+
+S o _ _ -> or _ ^ _ ^ _ <
+S a _ _ -> and _ ^ _ ^ _ <
+
+S ( _ _ -> S _ > _ ^ ( >
+S ) _ _ -> close_bracket _ ^ _ ^ _ <
+
+S _ _ _ -> end _ ^ _ ^ _ <
+
+or _ _ o -> or _ ^ o > _ <
+or _ _ a -> or _ ^ a > _ <
+or _ _ ( -> or2 _ ^ _ ^ ( >
+or _ _ _ -> S _ > _ ^ o >
+
+or2 _ _ _ -> S _ > _ ^ o >
+
+and _ _ o -> and2 _ ^ _ ^ o >
+and _ _ a -> and _ ^ a > _ <
+and _ _ ( -> and2 _ ^ _ ^ ( >
+and _ _ _ -> S _ > _ ^ a >
+
+and2 _ _ _ -> S _ > _ ^ a >
+
+close_bracket _ _ a -> close_bracket _ ^ a > _ <
+close_bracket _ _ o -> close_bracket _ ^ o > _ <
+close_bracket _ _ ( -> S _ > _ ^ _ ^
+
+
+end _ _ a -> end _ ^ a > _ <
+end _ _ o -> end _ ^ o > _ <
+end _ _ _ -> go_left_most _ ^ _ < _ ^
+
+go_left_most _ a _ -> go_left_most _ ^ a < _ ^
+go_left_most _ o _ -> go_left_most _ ^ o < _ ^
+go_left_most _ 0 _ -> go_left_most _ ^ 0 < _ ^
+go_left_most _ 1 _ -> go_left_most _ ^ 1 < _ ^
+go_left_most _ _ _ -> ss _ ^ _ > _ ^
+
+
+ss _ _ _ -> endend _ ^ _ ^ _ <
+ss _ 0 _ -> ss _ ^ _ > 0 >
+ss _ 1 _ -> ss _ ^ _ > 1 >
+ss _ o _ -> oror _ ^ _ ^ _ <
+ss _ a _ -> andand _ ^ _ ^ _ <
+
+endend _ _ 0 -> AC 0 ^ _ ^ _ ^
+endend _ _ 1 -> AC 1 ^ _ ^ _ ^
+
+oror _ _ 1 -> oror1 _ ^ _ ^ _ <
+oror _ _ 0 -> oror0 _ ^ _ ^ _ <
+oror1 _ _ 1 -> ss _ ^ _ > 1 >
+oror1 _ _ 0 -> ss _ ^ _ > 1 >
+oror0 _ _ 1 -> ss _ ^ _ > 1 >
+oror0 _ _ 0 -> ss _ ^ _ > 0 >
+
+andand _ _ 1 -> andand1 _ ^ _ ^ _ <
+andand _ _ 0 -> andand0 _ ^ _ ^ _ <
+andand1 _ _ 1 -> ss _ ^ _ > 1 >
+andand1 _ _ 0 -> ss _ ^ _ > 0 >
+andand0 _ _ 1 -> ss _ ^ _ > 0 >
+andand0 _ _ 0 -> ss _ ^ _ > 0 >
+
+
+
+
+
+
+
+
