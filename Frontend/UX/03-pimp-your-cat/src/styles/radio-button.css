@@ -1,0 +1,32 @@
+.radio-button {
+  flex-grow: 1;
+
+  width: 100px;
+}
+
+.radio-button__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+
+  background-color: #e1e8e9;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.radio-button__label:hover {
+  background-color: #a8adae;
+}
+
+.radio-button__input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  background-color: #ffaa36;
+}

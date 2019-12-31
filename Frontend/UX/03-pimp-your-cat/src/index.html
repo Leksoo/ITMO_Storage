@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>03-pimp-your-cat</title>
+    <link rel="stylesheet" href="styles/html.css" />
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/exit-button.css" />
+    <link rel="stylesheet" href="styles/logo.css" />
+    <link rel="stylesheet" href="styles/number-input.css" />
+    <link rel="stylesheet" href="styles/radio-button.css" />
+    <link rel="stylesheet" href="styles/email.css" />
+    <link rel="stylesheet" href="styles/spam.css" />
+    <link rel="stylesheet" href="styles/sign-button.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inline&display=swap" rel="stylesheet" />
+  </head>
+  <body class="body">
+    <main class="content">
+      <header class="header content__header">
+        <h1 class="header__name">Прокачай кота!</h1>
+        <h2 class="header__description">
+          Подпишись на рассылку нашего тренера и получи индивидуальную подобранную программу
+          тренеровок для своего кота
+        </h2>
+      </header>
+      <form class="content__line content__line_filter">
+        Кот:
+        <label for="age">
+          <input id="age" class="number-input" type="number" min="0" max="20" />
+          лет
+        </label>
+        <label for="weight">
+          <input id="weight" class="number-input" type="number" min="0" max="20" />
+          кг
+        </label>
+      </form>
+      <form class="content__line content__line_filter">
+        <div class="radio-button">
+          <input name="program" id="weight-up" class="radio-button__input " type="radio" checked />
+          <label for="weight-up" class="radio-button__label">
+            <span>Набор массы</span>
+          </label>
+        </div>
+        <div class="radio-button">
+          <input name="program" id="weight-down" class="radio-button__input " type="radio" />
+          <label for="weight-down" class="radio-button__label">
+            <span>Похудение</span>
+          </label>
+        </div>
+        <div class="radio-button">
+          <input name="program" id="do-not-know" class="radio-button__input " type="radio" />
+          <label for="do-not-know" class="radio-button__label">
+            <span>Не знаю</span>
+          </label>
+        </div>
+      </form>
+      <label for="email" class="email content__line">
+        <input id="email" class="email__input" type="email" placeholder="Введите Email" />
+      </label>
+      <label for="spam" class="spam content__line">
+        <input id="spam" class="spam__input" type="checkbox" />
+        <span class="spam__checkbox"></span>
+        <span class="spam__text">Хочу спам</span>
+      </label>
+      <button class="sign-button content__line"><strong>Подписаться</strong></button>
+    </main>
+    <aside class="logo">
+      <div class="logo__block logo__block_size-big"></div>
+      <img src="img/logo_img.jpg" alt="cat picture" class="logo__img" />
+      <div class="logo__block logo__block_size-small"></div>
+    </aside>
+    <button class="exit-button" type="button">
+      <img src="img/close.png" alt="close" class="exit-button__img" />
+    </button>
+  </body>
+</html>

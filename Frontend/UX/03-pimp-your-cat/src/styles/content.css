@@ -1,0 +1,19 @@
+.content {
+  font-family: 'Fascinate Inline', cursive;
+}
+
+.content__line {
+  display: block;
+
+  margin: 20px 0;
+
+  font-size: 1.5em;
+}
+
+.content__header {
+  text-align: center;
+}
+
+.content__line_filter {
+  display: flex;
+}

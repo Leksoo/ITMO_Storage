@@ -1,0 +1,20 @@
+public class Example {
+    protected final StringBuilder strb = new StringBuilder();
+    private static String a = "aaaa";
+
+    Example(int a, String b) {}
+
+    private void co(String a, Integer b, int c) {
+        final String str1 = "aaaa";
+        int l = 1111;
+        blabla();
+        StringBuilder stringBuilder = new StringBuilder(str1);
+    }
+
+    public static final int ro(String a, Integer b, int c) {
+        final String str1 = "aaaa";
+        int inttt = 1111;
+        StringBuilder stringBuilder = new StringBuilder(str1);
+        return inttt;
+    }
+}

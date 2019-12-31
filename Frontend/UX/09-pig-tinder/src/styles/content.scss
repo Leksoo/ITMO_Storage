@@ -1,0 +1,21 @@
+.content__pig {
+  max-width: 500px;
+  margin: 10px auto 30px;
+  padding: 20px 5%;
+
+  background: #fff;
+}
+
+.pig {
+  &__img {
+    width: 100%;
+    margin-bottom: 10px;
+
+    object-fit: cover;
+  }
+  &__name,
+  &__age {
+    text-align: center;
+  }
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}

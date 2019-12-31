@@ -1,0 +1,15 @@
+.body {
+  position: relative;
+
+  display: grid;
+  grid-template-areas: 'main logo';
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 1fr;
+
+  width: 1000px;
+  height: 100%;
+  margin: auto;
+  padding: 0 20px;
+
+  background-color: rgba(181, 210, 216, 0.2);
+}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: GothicGybrid;
+  src: local('GothicGybrid'), url('../fonts/bu gothic hybrid.ttf') format('opentype');
+}
+
+.page {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'content';
+  grid-template-columns: 1200px;
+  grid-template-rows: 120px fit-content(100%);
+
+  width: 1200px;
+  margin: 0 auto;
+
+  border-top: #000000 solid 1px;
+  border-right: #000000 solid 1px;
+  border-left: #000000 solid 1px;
+}

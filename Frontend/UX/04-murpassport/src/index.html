@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>04-murpassport</title>
+    <link rel="stylesheet" href="styles/html.css" />
+    <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/section-data.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/section-vaccine.css" />
+    <link rel="stylesheet" href="styles/radio-button.css" />
+    <link rel="stylesheet" href="styles/section-gallery.css" />
+    <link rel="stylesheet" href="styles/section-feedback.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__name"><span class="header__name_red-letter">М</span>урпаспорт</h1>
+    </header>
+    <input name="menu" id="menu-data" class="radio-button__input" type="radio" checked />
+    <input name="menu" id="menu-vaccine" class="radio-button__input" type="radio" />
+    <input name="menu" id="menu-gallery" class="radio-button__input" type="radio" />
+    <input name="menu" id="menu-feedback" class="radio-button__input" type="radio" />
+    <nav class="menu">
+      <h2 class="menu__header">МЕНЮ</h2>
+      <form class="menu__elements">
+        <label for="menu-data" class="radio-button radio-button_data menu__radio-button">
+          Данные
+        </label>
+        <label for="menu-vaccine" class="radio-button radio-button_vaccine menu__radio-button">
+          Прививки
+        </label>
+        <label for="menu-gallery" class="radio-button radio-button_gallery menu__radio-button">
+          Галлерея
+        </label>
+        <label for="menu-feedback" class="radio-button radio-button_feedback menu__radio-button">
+          Обратная связь
+        </label>
+      </form>
+    </nav>
+    <main class="content">
+      <section class="content__section section-data">
+        <h3 class="section-data__header">Данные</h3>
+        <img src="img/cat_main.jpg" class="section-data__img" alt="cat's main picture" />
+        <ul class="section-data__list">
+          <li>Имя: Василий</li>
+          <li>Фамилия: Пухлый</li>
+          <li>Порода: Шотландская</li>
+          <li>Дата рождения: 01.01.2015</li>
+        </ul>
+      </section>
+      <section class="content__section section-vaccine">
+        <h3 class="section-vaccine__header">Прививки</h3>
+        <ol>
+          <li class="section-vaccine__list-item">От ожирения</li>
+          <li class="section-vaccine__list-item">Для похудения</li>
+          <li class="section-vaccine__list-item">От переедания</li>
+        </ol>
+      </section>
+      <section class="content__section section-gallery">
+        <h3 class="section-gallery__header">Галерея</h3>
+        <img src="img/cat_other.jpg" class="section-gallery__img" alt="cat's another picture" />
+        <img src="img/cat_other_2.jpg" class="section-gallery__img" alt="cat's another picture" />
+      </section>
+      <section class="content__section section-feedback">
+        <h3 class="section-feedback__header">Обратная связь</h3>
+        <form class="section-feedback__form">
+          <label for="email">
+            <input
+              id="email"
+              class="section-feedback__input section-feedback__input_email"
+              type="email"
+              name="email"
+              placeholder="Ваш Email"
+            />
+          </label>
+          <label for="comment">
+            <textarea
+              id="comment"
+              name="comment"
+              class="section-feedback__input section-feedback__input_comment"
+              placeholder="Ваш комментарий"
+            >
+            </textarea>
+          </label>
+          <button class="section-feedback__send-button"><strong>ОТПРАВИТЬ</strong></button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>e-mail: &laquo;<a href="#">support@murpassport.ru</a>&raquo;</div>
+      <div>&copy; 2019 ООО &laquo;<a href="#">Мурпаспорт</a>&raquo;</div>
+    </footer>
+    <script type="text/javascript" src="./simulation.js"></script>
+  </body>
+</html>

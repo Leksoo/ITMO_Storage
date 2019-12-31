@@ -1,0 +1,20 @@
+class Example extends A implements B,
+        C
+        ,
+        D {
+
+    Example(A a,
+            B b)          {
+        String str="aaaa";
+    }
+
+    static
+
+
+    int      a =
+            11111;
+    private char
+
+
+            b = 'a';
+                            }

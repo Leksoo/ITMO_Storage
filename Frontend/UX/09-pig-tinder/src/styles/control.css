@@ -1,0 +1,62 @@
+.control__buttons {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  max-width: 700px;
+  margin: auto;
+}
+.control__cancel,
+.control__favorite,
+.control__like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  padding: 6px;
+
+  border: #000 solid 0;
+  border-radius: 50%;
+
+  transition: background 0.7s, transform 0.4s;
+
+  background: #fff;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+.control__cancel:hover,
+.control__favorite:hover,
+.control__like:hover {
+  background: #e4e3ee;
+  cursor: pointer;
+}
+.control__cancel:active,
+.control__favorite:active,
+.control__like:active {
+  transform: scale(1.2);
+
+  background: #1913ff;
+}
+.control__cancel img,
+.control__favorite img,
+.control__like img {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .control__cancel img,
+  .control__favorite img,
+  .control__like img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .control__cancel,
+  .control__favorite,
+  .control__like {
+    width: 30px;
+    height: 30px;
+  }
+}

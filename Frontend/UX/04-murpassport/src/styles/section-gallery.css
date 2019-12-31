@@ -1,0 +1,22 @@
+.section-gallery {
+  display: none;
+
+  width: 500px;
+  height: 500px;
+
+  box-shadow: 0 0 5px 1px #000000;
+}
+
+.section-gallery__header {
+  margin: 10px 0;
+
+  text-align: center;
+}
+
+.section-gallery__img {
+  display: block;
+
+  width: 320px;
+  height: 200px;
+  margin: 10px auto;
+}

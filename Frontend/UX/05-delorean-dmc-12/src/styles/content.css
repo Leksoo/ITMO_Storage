@@ -1,0 +1,25 @@
+.content {
+  display: grid;
+  grid-template-areas: 'section1 section2 section3';
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: fit-content(100%);
+
+  margin-top: 10px;
+
+  font-size: 1em;
+}
+
+.content__section1 {
+  grid-area: section1;
+}
+.content__section2 {
+  grid-area: section2;
+}
+.content__section3 {
+  grid-area: section3;
+}
+
+.content .section .section__2-column-paragraph::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

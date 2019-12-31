@@ -1,0 +1,25 @@
+#size-small:checked ~ .page {
+  font-size: 1rem;
+}
+
+#size-big:checked ~ .page {
+  font-size: 1.5rem;
+}
+
+#family-Bahnschrift:checked ~ .page {
+  font-family: Bahnschrift, sans-serif;
+}
+
+#family-Roboto:checked ~ .page {
+  font-family: 'Roboto Thin', monospace;
+}
+
+#theme-light:checked ~ .page {
+  background-color: #fff;
+  color: #000;
+}
+
+#theme-dark:checked ~ .page {
+  background-color: #000;
+  color: #fff;
+}

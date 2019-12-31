@@ -1,0 +1,62 @@
+.input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+@keyframes pig-appear {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(6turn) scale(1);
+  }
+}
+
+@mixin display-img($id) {
+  ~ .content .content__pig {
+    display: none;
+
+    &_#{$id} {
+      display: block;
+
+      animation: pig-appear 2s ease-out;
+    }
+  }
+}
+
+@mixin display-controls($id) {
+  ~ .control .control__buttons {
+    display: none;
+
+    &_#{$id} {
+      display: flex;
+    }
+  }
+}
+
+#img1:checked {
+  @include display-img(1);
+  @include display-controls(2);
+}
+
+#img2:checked {
+  @include display-img(2);
+  @include display-controls(3);
+}
+
+#img3:checked {
+  @include display-img(3);
+  @include display-controls(4);
+}
+
+#img4:checked {
+  @include display-img(4);
+  @include display-controls(5);
+}
+
+#img5:checked {
+  @include display-img(5);
+  @include display-controls(1);
+}

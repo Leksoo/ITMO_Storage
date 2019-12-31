@@ -1,0 +1,13 @@
+.ad__info {
+  font-size: 0.8rem;
+}
+.ad__img {
+  cursor: pointer;
+}
+.ad__img_big {
+  width: 800px;
+  height: 100px;
+}
+.ad__title {
+  line-height: 30px;
+}

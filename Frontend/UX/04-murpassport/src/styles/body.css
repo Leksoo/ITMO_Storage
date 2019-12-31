@@ -1,0 +1,17 @@
+.body {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav content'
+    'footer footer';
+  grid-template-columns: 300px 700px;
+  grid-template-rows: 70px 1fr 50px;
+
+  width: 1000px;
+  min-height: 100%;
+
+  margin: auto;
+
+  border-right: #000000 solid 1px;
+  border-left: #000000 solid 1px;
+}

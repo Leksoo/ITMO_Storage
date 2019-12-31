@@ -1,0 +1,64 @@
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.filters__filter {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.filters__name {
+  display: block;
+
+  width: 170px;
+  height: 22px;
+  margin-bottom: 15px;
+
+  font-family: Helvetica, serif;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+.filters__image {
+  width: 170px;
+  height: 169px;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.filters__image_piter {
+  filter: grayscale(1);
+}
+
+.filters__image_yalta {
+  filter: sepia(1) saturate(1.5);
+}
+
+.filters__image_ural-summer {
+  filter: hue-rotate(180deg) saturate(2);
+}
+
+.filters__left-arrow {
+  transform: rotate(90deg);
+}
+
+.filters__right-arrow {
+  transform: rotate(-90deg);
+}
+
+.filters_arrow {
+  transform-origin: 50% 50%;
+
+  fill: rgba(170, 170, 170, 0.8);
+  opacity: 0.6;
+}

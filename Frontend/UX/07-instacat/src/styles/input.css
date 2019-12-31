@@ -1,0 +1,112 @@
+.input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+/*filters*/
+
+#no-filter:checked ~ .content__filters .filters__filter_no-filter .filters__name {
+  font-weight: bold;
+}
+
+#no-filter:checked ~ .content__image-container .content__image {
+  filter: none;
+}
+
+#piter:checked ~ .content__filters .filters__filter_piter .filters__name {
+  font-weight: bold;
+}
+
+#piter:checked ~ .content__image-container .content__image {
+  filter: grayscale(1);
+}
+#yalta:checked ~ .content__filters .filters__filter_yalta .filters__name {
+  font-weight: bold;
+}
+
+#yalta:checked ~ .content__image-container .content__image {
+  filter: sepia(1) saturate(1.5);
+}
+
+#ural-summer:checked ~ .content__filters .filters__filter_ural-summer .filters__name {
+  font-weight: bold;
+}
+
+#ural-summer:checked ~ .content__image-container .content__image {
+  filter: hue-rotate(180deg) saturate(2);
+}
+
+/*logo*/
+#logo-button:active ~ .content__image-container .content__image {
+  display: none;
+}
+
+#logo-button:active ~ .content__image-container .content__image-origin {
+  display: inline;
+}
+
+/*fill && scale*/
+#scale-x1:checked ~ .content__image-container .content__image {
+  width: 768px;
+  height: 524px;
+}
+
+#scale-x2:checked ~ .content__image-container .content__image {
+  width: calc(768px * 1.5);
+  height: calc(524px * 1.5);
+}
+
+#scale-x3:checked ~ .content__image-container .content__image {
+  width: calc(768px * 2);
+  height: calc(524px * 2);
+}
+
+#fill-checkbox:checked ~ #scale-x1:checked ~ .content__image-container .content__image {
+  width: 400px;
+  height: 400px;
+}
+
+#fill-checkbox:checked ~ #scale-x2:checked ~ .content__image-container .content__image {
+  width: calc(400px * 1.5);
+  height: calc(400px * 1.5);
+}
+
+#fill-checkbox:checked ~ #scale-x3:checked ~ .content__image-container .content__image {
+  width: calc(400px * 2);
+  height: calc(400px * 2);
+}
+
+/*scale*/
+#scale-x1:checked ~ .controls #label-scale-x2,
+#scale-x2:checked ~ .controls #label-scale-x3,
+#scale-x3:checked ~ .controls #label-scale-x1 {
+  display: inline;
+}
+
+/*rotate*/
+#rotate-0:checked ~ .controls #label-rotate-90,
+#rotate-90:checked ~ .controls #label-rotate-180,
+#rotate-180:checked ~ .controls #label-rotate-270,
+#rotate-270:checked ~ .controls #label-rotate-0 {
+  display: inline;
+}
+
+#rotate-90:checked ~ .content__image-container .content__image_rotate-wrapper {
+  transform: rotate(0.25turn);
+}
+
+#rotate-180:checked ~ .content__image-container .content__image_rotate-wrapper {
+  transform: rotate(0.5turn);
+}
+
+#rotate-270:checked ~ .content__image-container .content__image_rotate-wrapper {
+  transform: rotate(0.75turn);
+}
+
+/*flip*/
+
+#flip-checkbox:checked ~ .content__image-container .content__image_flip-wrapper {
+  transform: scale(-1, 1);
+}

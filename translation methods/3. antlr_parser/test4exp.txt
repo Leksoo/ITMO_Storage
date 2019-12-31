@@ -1,0 +1,3 @@
+class Example {
+    private static final String a = "   ";
+}

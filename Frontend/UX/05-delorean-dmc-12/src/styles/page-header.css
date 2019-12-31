@@ -1,0 +1,32 @@
+.page-header {
+  grid-area: header;
+}
+.page-header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 80px;
+  margin: 0;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+
+  font-family: 'GothicGybrid', serif;
+  font-size: 3em;
+}
+
+.page-header__date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 40px;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
+
+  font-size: 1em;
+}

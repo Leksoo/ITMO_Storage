@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: header;
+
+  border-bottom: #000000 solid 1px;
+}
+
+.header__name_red-letter {
+  color: #ff0000;
+}

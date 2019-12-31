@@ -1,0 +1,40 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-top: 10px;
+}
+
+.menu__city {
+  color: rgba(0, 0, 0, 0.5);
+  vertical-align: center;
+}
+
+.menu__city::before {
+  content: url(../icon/arrow_up_right.svg);
+  vertical-align: center;
+}
+
+.menu__settings {
+  display: inline-block;
+
+  cursor: pointer;
+}
+
+.menu__user-info {
+  display: inline-block;
+
+  margin-left: 20px;
+  padding: 5px 60px 5px 5px;
+
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+}
+
+.menu__login {
+  margin-bottom: 5px;
+}
+.menu__login::first-letter {
+  color: #ff0000;
+}

@@ -1,0 +1,15 @@
+.exit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  border: none;
+
+  background: transparent;
+  cursor: pointer;
+}
+
+.exit-button__img {
+  width: 30px;
+  height: 30px;
+}

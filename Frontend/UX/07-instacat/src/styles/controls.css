@@ -1,0 +1,19 @@
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 632px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.controls__label {
+  cursor: pointer;
+}
+
+.controls__label_multiple {
+  display: none;
+
+  cursor: pointer;
+}

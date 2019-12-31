@@ -1,0 +1,89 @@
+.input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+@keyframes pig-appear {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(6turn) scale(1);
+  }
+}
+#img1:checked ~ .content .content__pig {
+  display: none;
+}
+#img1:checked ~ .content .content__pig_1 {
+  display: block;
+
+  animation: pig-appear 2s ease-out;
+}
+#img1:checked ~ .control .control__buttons {
+  display: none;
+}
+#img1:checked ~ .control .control__buttons_2 {
+  display: flex;
+}
+
+#img2:checked ~ .content .content__pig {
+  display: none;
+}
+#img2:checked ~ .content .content__pig_2 {
+  display: block;
+
+  animation: pig-appear 2s ease-out;
+}
+#img2:checked ~ .control .control__buttons {
+  display: none;
+}
+#img2:checked ~ .control .control__buttons_3 {
+  display: flex;
+}
+
+#img3:checked ~ .content .content__pig {
+  display: none;
+}
+#img3:checked ~ .content .content__pig_3 {
+  display: block;
+
+  animation: pig-appear 2s ease-out;
+}
+#img3:checked ~ .control .control__buttons {
+  display: none;
+}
+#img3:checked ~ .control .control__buttons_4 {
+  display: flex;
+}
+
+#img4:checked ~ .content .content__pig {
+  display: none;
+}
+#img4:checked ~ .content .content__pig_4 {
+  display: block;
+
+  animation: pig-appear 2s ease-out;
+}
+#img4:checked ~ .control .control__buttons {
+  display: none;
+}
+#img4:checked ~ .control .control__buttons_5 {
+  display: flex;
+}
+
+#img5:checked ~ .content .content__pig {
+  display: none;
+}
+#img5:checked ~ .content .content__pig_5 {
+  display: block;
+
+  animation: pig-appear 2s ease-out;
+}
+#img5:checked ~ .control .control__buttons {
+  display: none;
+}
+#img5:checked ~ .control .control__buttons_1 {
+  display: flex;
+}

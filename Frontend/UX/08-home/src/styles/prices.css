@@ -1,0 +1,7 @@
+.prices {
+  display: flex;
+  justify-content: space-between;
+}
+.price__change {
+  color: rgba(0, 0, 0, 0.5);
+}

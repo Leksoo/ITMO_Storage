@@ -1,0 +1,67 @@
+@import 'setup';
+
+.control {
+  &__buttons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    max-width: 700px;
+    margin: auto;
+  }
+
+  &__cancel {
+    @extend %round-button;
+  }
+
+  &__favorite {
+    @extend %round-button;
+  }
+
+  &__like {
+    @extend %round-button;
+  }
+}
+
+%round-button {
+  &:hover {
+    background: rgb(228, 227, 238);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(1.2);
+
+    background: rgba(25, 19, 255, 1);
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+
+    @include for-phone {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  padding: 6px;
+
+  border: #000 solid 0;
+  border-radius: 50%;
+
+  transition: background 0.7s, transform 0.4s;
+
+  background: #fff;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  @include for-phone {
+    width: 30px;
+    height: 30px;
+  }
+}

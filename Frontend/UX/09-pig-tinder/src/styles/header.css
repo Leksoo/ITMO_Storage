@@ -1,0 +1,13 @@
+.header {
+  width: 100%;
+
+  background: #3b3d3e;
+}
+.header__title {
+  padding: 5px 0;
+
+  color: #fff;
+  font-family: Bahnschrift, monospace;
+  font-size: 3em;
+  text-align: center;
+}

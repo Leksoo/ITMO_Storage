@@ -1,0 +1,63 @@
+.spam {
+  display: flex;
+  align-items: center;
+
+  width: fit-content;
+
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.spam__input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+.spam__text {
+  margin-left: 10px;
+
+  opacity: 0.5;
+}
+
+.spam__checkbox {
+  position: relative;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 3px;
+
+  background-color: #e1e8e9;
+}
+
+.spam:hover .spam__checkbox {
+  background-color: #a8adae;
+}
+
+.spam__input:checked ~ .spam__checkbox {
+  background-color: #ffaa36;
+}
+
+.spam__checkbox:after {
+  position: absolute;
+  top: 5px;
+  left: 9px;
+
+  display: none;
+
+  width: 5px;
+  height: 10px;
+
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
+
+  transform: rotate(45deg);
+
+  content: '';
+}
+
+.spam__input:checked ~ .spam__checkbox:after {
+  display: block;
+}

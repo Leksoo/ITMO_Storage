@@ -1,0 +1,55 @@
+public class Main     implements B,     C,   D        {
+private      static  K sad;
+            public A ads11;
+    Integer d;
+
+    static final private int a;
+    private      final A a;
+    String a =    "aa";
+
+
+    Int b =    12345.111000;
+
+
+    K aaaa = abcde;
+
+    private final Void abcd
+
+
+
+
+
+                    (Int afeefsdgs, K b,
+    String
+    c, Deb          arr)
+
+    {
+    final D a = call(a,b);
+    K b = "aaa";
+    bimbim();
+    bim(a,b,c);
+    return a;
+    return;
+    }
+            private final Main(Int a, K b, String c, Deb arr) {}
+            static public void aaa(){
+
+                if(true
+                )
+                {
+                       while(false){
+
+                       }
+                }
+
+
+                else{
+
+                    bbbb();
+                }
+
+
+            }
+
+
+}

@@ -1,0 +1,26 @@
+.section-data {
+  display: none;
+
+  width: 500px;
+  height: 450px;
+
+  box-shadow: 0 0 5px 1px #000000;
+}
+
+.section-data__img {
+  display: block;
+
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.section-data__header {
+  margin: 10px 0;
+
+  text-align: center;
+}
+
+.section-data__list {
+  list-style-type: none;
+}

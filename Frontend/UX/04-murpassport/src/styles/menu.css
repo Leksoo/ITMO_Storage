@@ -1,0 +1,19 @@
+.menu {
+  grid-area: nav;
+
+  border-right: #000000 solid 1px;
+}
+
+.menu__header {
+  margin: 0;
+  padding: 10px 0;
+
+  border-bottom: #000000 solid 1px;
+
+  text-align: center;
+}
+
+.menu__elements {
+  display: flex;
+  flex-direction: column;
+}

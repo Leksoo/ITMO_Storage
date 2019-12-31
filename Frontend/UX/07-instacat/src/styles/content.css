@@ -1,0 +1,46 @@
+.content {
+  width: 1440px;
+
+  background-color: #ffffff;
+}
+
+.content__controls {
+  margin: auto;
+}
+
+.content__image-container {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+.content__image-origin {
+  display: none;
+
+  transition: width 1s, height 1s, transform 1s, filter 2s;
+}
+
+.content__image_flip-wrapper {
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.content__image_rotate-wrapper {
+  transition: width 1s, height 1s, transform 1s;
+}
+
+.content__image {
+  width: 768px;
+  height: 524px;
+
+  transition: width 1s, height 1s, transform 1s, filter 2s;
+
+  object-fit: fill;
+}
+
+.content__filters {
+  padding-top: 20px;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,13 @@
+@import 'setup';
+
+.page {
+  max-width: 1000px;
+  height: fit-content;
+  margin: auto;
+  padding-bottom: 20px;
+
+  @include for-phone {
+    font-size: 0.7em;
+  }
+  background: rgba(91, 91, 91, 0.12);
+}

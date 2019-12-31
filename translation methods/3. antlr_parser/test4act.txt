@@ -1,0 +1,10 @@
+class Example {
+    final
+    static
+    private
+    String
+    a
+    =
+    "   "
+    ;
+}

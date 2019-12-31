@@ -1,0 +1,13 @@
+.page {
+  max-width: 1000px;
+  height: fit-content;
+  margin: auto;
+  padding-bottom: 20px;
+
+  background: rgba(91, 91, 91, 0.12);
+}
+@media (max-width: 767px) {
+  .page {
+    font-size: 0.7em;
+  }
+}

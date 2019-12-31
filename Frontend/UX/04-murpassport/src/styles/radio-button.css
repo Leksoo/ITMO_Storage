@@ -1,0 +1,58 @@
+.radio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 50px;
+
+  cursor: pointer;
+  font-size: 1.3em;
+}
+
+.radio-button:hover {
+  background-color: rgba(203, 208, 209, 0.63);
+}
+
+.radio-button__input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+#menu-data:checked ~ .menu .menu__elements .radio-button_data {
+  background-color: #c4ffbc;
+}
+#menu-vaccine:checked ~ .menu .menu__elements .radio-button_vaccine {
+  background-color: #c4ffbc;
+}
+#menu-gallery:checked ~ .menu .menu__elements .radio-button_gallery {
+  background-color: #c4ffbc;
+}
+#menu-feedback:checked ~ .menu .menu__elements .radio-button_feedback {
+  background-color: #c4ffbc;
+}
+#menu-data:focus ~ .menu .menu__elements .radio-button_data {
+  outline: #0000ff solid 1px;
+}
+#menu-vaccine:focus ~ .menu .menu__elements .radio-button_vaccine {
+  outline: #0000ff solid 1px;
+}
+#menu-gallery:focus ~ .menu .menu__elements .radio-button_gallery {
+  outline: #0000ff solid 1px;
+}
+#menu-feedback:focus ~ .menu .menu__elements .radio-button_feedback {
+  outline: #0000ff solid 1px;
+}
+#menu-data:checked ~ .content .section-data {
+  display: block;
+}
+#menu-vaccine:checked ~ .content .section-vaccine {
+  display: block;
+}
+#menu-gallery:checked ~ .content .section-gallery {
+  display: block;
+}
+#menu-feedback:checked ~ .content .section-feedback {
+  display: block;
+}
