@@ -1,0 +1,16 @@
+enum class Token{
+    AAA, END
+}
+
+class Lexer(
+    private val path : String
+) {
+    var input : String
+    private val tokens = HashMap<Token, Pattern>()
+    init{
+         input = FileReader(path).readLines().joinToString()
+         tokens.apply{
+             
+         }
+    }
+}

@@ -1,0 +1,28 @@
+header{
+package calculator
+};
+
+WS : '[ \t\r\n]+' --skip;
+NUMBER : '[0-9]+';
+PLUS : '[+]';
+MINUS : '[-]';
+MULT : '[*]';
+LP :   '[(]';
+RP :   '[)]';
+
+start : e;
+
+e >> [num : Int]: t e_(t : Int) {num = e_};
+
+e_(acc : Int) >> [num : Int]: PLUS t e_(acc + t : Int) {num = e_}
+ | MINUS t e_(acc - t : Int) {num = e_}
+ | EPS {num = acc};
+
+t >> [num :Int]: f t_(f : Int) {num = t_};
+
+t_(acc : Int) >> [num : Int]: MULT f t_(acc * f : Int) {num = t_}
+      | EPS {num = acc};
+
+f >> [num : Int]: NUMBER {num = NUMBER.toInt()} | LP e RP {num = e};
+
+

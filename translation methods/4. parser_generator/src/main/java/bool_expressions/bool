@@ -1,0 +1,38 @@
+header{
+package bool_expression
+import Tree
+};
+
+WS : '[ \t\r\n]+' --skip;
+OR : 'or';
+XOR : 'xor';
+AND : 'and';
+NOT : 'not';
+LP :   '[(]';
+RP :   '[)]';
+VAR : '[a-z]';
+
+start : e;
+
+e >> [tree : Tree]: x e_ {tree = Tree("E",arrayOf(x, e_))};
+
+e_ >> [tree : Tree]: OR x e_ {tree = Tree("E^",arrayOf(Tree("or"),x,e_))}
+ | EPS {tree = Tree()};
+
+x >> [tree : Tree]: a x_ {tree= Tree("X",arrayOf(a,x_))};
+
+x_ >> [tree : Tree]: XOR a x_ {tree = Tree("X^",arrayOf(Tree("xor"),a,x_))}
+ | EPS {tree = Tree()};
+
+a >> [tree : Tree]: n a_ {tree= Tree("A",arrayOf(n,a_))};
+
+a_ >> [tree : Tree]: AND n a_ {tree = Tree("A^",arrayOf(Tree("and"),n,a_))}
+ | EPS {tree = Tree()};
+
+n >> [tree : Tree] : NOT n {tree = Tree("N",arrayOf(Tree("not"),n))}
+ | v {tree = v};
+
+v >> [tree : Tree] : VAR { tree = Tree("V",arrayOf(Tree(VAR)))}
+ | LP e RP {tree = Tree("V",arrayOf(Tree("("), e ,Tree(")")))};
+
+
