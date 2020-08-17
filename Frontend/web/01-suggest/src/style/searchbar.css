@@ -1,0 +1,21 @@
+.searchbar {
+  display: flex;
+
+  margin-bottom: 5px;
+}
+
+.searchbar__input {
+  width: 400px;
+  height: 40px;
+
+  border: #ffb71b 2px solid;
+
+  font-size: 1.5em;
+  outline: none;
+}
+
+.searchbar__input:focus {
+  border: #686b6c 2px solid;
+
+  box-shadow: 0 0 5px 1px #000000;
+}

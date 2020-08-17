@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/searchbar.css" />
+    <link rel="stylesheet" href="style/page.css" />
+    <title>Задача «Саджест»</title>
+  </head>
+  <body>
+    <main class="page">
+      <form class="searchbar page__searchbar">
+        <input
+          id="airport-search"
+          type="search"
+          list="airports-list"
+          oninput="onInputChange(this)"
+          class="searchbar__input"
+        />
+        <label class="searchbar__label" for="airport-search"> </label>
+        <datalist id="airports-list"> </datalist>
+      </form>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
